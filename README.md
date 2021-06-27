@@ -4,4 +4,4 @@
 
 | content      | link  
 | :----------- | :--------------------------------------------------------------------|
-| class01    |[reverse array](https://github.com/DinaSami/401-data-structures-and-algorithms/blob/main/javascript/array-reverse/README.md)| 
+| class01    |[reverse array](https://dinasami.github.io/401-data-structures-and-algorithms/javascript/array-reverse/)| 
