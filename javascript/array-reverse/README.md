@@ -5,4 +5,4 @@ Write a function called reverseArray which takes an array as an argument. Withou
 
 ## Whiteboard Process
 
-![preview](./reverseArray.jpg)
+![preview](./image.jpg)
