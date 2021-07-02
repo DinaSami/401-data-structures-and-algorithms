@@ -1,0 +1,26 @@
+{
+  "name": "401-data-structures-and-algorithms",
+  "version": "1.0.0",
+  "description": "## Table of contents",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest --coverage --verbose",
+    "lint": "eslint '**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DinaSami/401-data-structures-and-algorithms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DinaSami/401-data-structures-and-algorithms/issues"
+  },
+  "homepage": "https://github.com/DinaSami/401-data-structures-and-algorithms#readme",
+  "devDependencies": {
+    "jest": "^27.0.6",
+    "supertest": "^6.1.3"
+  }
+}
