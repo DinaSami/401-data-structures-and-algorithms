@@ -83,6 +83,21 @@ class LinkedList{
     temp.next = current.next;
     current.next = temp;
   }
+  
+  kthFromEnd(k){
+    let llArray = [];
+    let current = this.head;
+    while(current){
+      llArray.push(current.value);
+      current = current.next;
+    }
+    llArray.reverse();
+    if ( k >= llArray.length || k < 0){
+      return 'Invalid Input Number';
+    }else{
+      return llArray[k];
+    }
+  }
 }
   module.exports = {
     ll: LinkedList,
