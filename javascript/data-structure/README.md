@@ -39,3 +39,7 @@ Big O space is O(1) and time is O(n);
 
   .kthFromEnd()
 A function that finds the value kth from the end of the linked list
+
+### linked-list-zip
+
+![preview](./new12.png)
