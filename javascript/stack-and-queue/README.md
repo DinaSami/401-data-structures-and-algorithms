@@ -34,3 +34,11 @@ I add a new node with that value to the back of the queue with an O(1) Time perf
 - .enqueue();
  - adds a new node with that value to the back of the queue
 
+- .dequeue();
+ - Removes the node from the front of the queue
+
+- .peek();
+ - Returns Value of the node located at the front of the queue
+
+- .isempty();
+ - Returns boolean indicating whether or not the queue is empty
