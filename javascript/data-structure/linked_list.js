@@ -103,10 +103,13 @@ class LinkedList {
 
 }
 
+
 let linkedlistss = new LinkedList;
 linkedlistss.insert(1);
 linkedlistss.append(2);
 linkedlistss.append(3);
+linkedlistss.append(4);
+
 console.log(linkedlistss)
 let linkedlisttt = new LinkedList;
 linkedlisttt.insert(4);
@@ -162,10 +165,11 @@ function zip(linkedlist1, linkedlist2) {
   return llf;
 }
 
-zip(linkedlistss, linkedlisttt);
 
 module.exports = {
   ll: LinkedList,
   node: Node,
   zip
 };
+
+
