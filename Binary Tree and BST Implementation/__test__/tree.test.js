@@ -61,4 +61,27 @@ describe('testing Tree Class ', () => {
     let inOrder = tree.inOrder();
     expect(inOrder).toEqual([ 'D', 'B', 'E', 'A', 'F', 'C' ]);
   });
+  it('get max value', () => {
+    const tree = new Tree();
+
+    tree.root = new Node('1');
+    tree.root.left = new Node('2');
+    tree.root.left.left = new Node('3');
+    tree.root.left.right = new Node('4');
+    tree.root.right = new Node('5');
+    tree.root.right.left = new Node('6');
+    let getMax = tree.getMax();
+    expect(getMax).toEqual("6");
+  });
+  it('tree contains alphabets', () => {
+    const tree = new Tree();
+    tree.root = new Node('A');
+    tree.root.left = new Node('B');
+    tree.root.left.left = new Node('C');
+    tree.root.left.right = new Node('D');
+    tree.root.right = new Node('E');
+    tree.root.right.left = new Node('F');
+    let getMax = tree.getMax();
+    expect(getMax).toBeFalsy();
+  });
 });
