@@ -1,7 +1,7 @@
 'use strict';
 
 class Node {
-  constructor(value, next = null) {
+  constructor(value,next=null) {
     this.value = value;
     this.next = next;
 
@@ -18,7 +18,11 @@ class LinkedList {
     if (!value) {
       throw new Error('NO THING');
     }
-    this.head = new Node(value, this.head);
+    // this.head = new Node(value, this.head);
+    // this.size = this.size + 1;
+    let node = new Node(value);
+    node.next = this.head;
+    this.head=node;
     this.size = this.size + 1;
   }
 

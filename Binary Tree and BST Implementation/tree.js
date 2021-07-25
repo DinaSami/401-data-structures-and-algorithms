@@ -61,7 +61,23 @@ class Tree {
     inOrderVar(current);
     return array;
   }
-
+  getMax(){
+    let maxVal = 0;
+    const preOrderVar = (node) => {
+      if(node.value > maxVal){
+        maxVal = node.value;
+      }
+      if (node.left) {
+        preOrderVar(node.left);
+      }
+      if (node.right) {
+        preOrderVar(node.right);
+      }
+    };
+    let current = this.root;
+    preOrderVar(current);
+    return maxVal;
+  }
 }
 
 class BinarySearchTree {
