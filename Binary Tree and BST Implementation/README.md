@@ -2,6 +2,7 @@
 
 + Code Challenges 15
 + Code Challenges 16
++ Code Challenges 17
 
 
 ## Challenge
@@ -11,6 +12,7 @@ Create a Binary Tree class using this methods :
 - in order
 - post order 
 - getMax 
+- breadthFirst 
 
 Create a Binary Search Tree using this methods :
 - Add
@@ -24,3 +26,5 @@ I took the approach big O space/time by O(n) ,but for getMax method Big O was O(
 ## whiteboard
 
 ![](./tree.png)
+
+![](./tree2.png)

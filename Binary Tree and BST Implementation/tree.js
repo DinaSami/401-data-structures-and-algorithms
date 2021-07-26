@@ -61,10 +61,10 @@ class Tree {
     inOrderVar(current);
     return array;
   }
-  getMax(){
+  getMax() {
     let maxVal = 0;
     const preOrderVar = (node) => {
-      if(node.value > maxVal){
+      if (node.value > maxVal) {
         maxVal = node.value;
       }
       if (node.left) {
@@ -78,7 +78,26 @@ class Tree {
     preOrderVar(current);
     return maxVal;
   }
+  breadthFirst() {
+    let current = null;
+    let queue = [];
+    let treeArray = [];
+    queue.unshift(this.root);
+    while (queue.length) {
+      current = queue.pop();
+      treeArray.push(current.value);
+      if (current.left) {
+        queue.unshift(current.left);
+      }
+      if (current.right) {
+        queue.unshift(current.right);
+      }
+    }
+    return treeArray;
+  }
 }
+
+
 
 class BinarySearchTree {
   constructor() {
@@ -88,18 +107,18 @@ class BinarySearchTree {
     let node = new Node(value);
     let current = this.root;
     const helper = (current) => {
-      if(current.value > value && current.left === null){
+      if (current.value > value && current.left === null) {
         node.left = current.left;
         node.right = current.right;
         current.left = node;
       }
-      if(current.value > value){
+      if (current.value > value) {
         helper(current.left);
-      }if(current.value < value && current.right !== null){
+      } if (current.value < value && current.right !== null) {
         node.left = current.left;
         node.right = current.right;
         current.right = node;
-      }if(current.value < value){
+      } if (current.value < value) {
         helper(current.right);
       }
     };
@@ -107,23 +126,23 @@ class BinarySearchTree {
   }
   contains(value) {
     let current = this.root;
-    while(current !== null && current.value !== value){
-      if(value < current.value){
+    while (current !== null && current.value !== value) {
+      if (value < current.value) {
         current = current.left;
-      }else if(value > current.value){
+      } else if (value > current.value) {
         current = current.right;
       }
     }
-    if(!current){
+    if (!current) {
       return false;
-    }else{
+    } else {
       return true;
     }
   }
 }
 
 
-module.exports= {
+module.exports = {
   tree: Tree,
   bst: BinarySearchTree,
   node: Node
