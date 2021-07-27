@@ -3,6 +3,8 @@
 + Code Challenges 15
 + Code Challenges 16
 + Code Challenges 17
++ Code Challenges 18
+
 
 
 ## Challenge
@@ -13,6 +15,8 @@ Create a Binary Tree class using this methods :
 - post order 
 - getMax 
 - breadthFirst 
+- FuzzBuzz  
+
 
 Create a Binary Search Tree using this methods :
 - Add
@@ -28,3 +32,6 @@ I took the approach big O space/time by O(n) ,but for getMax method Big O was O(
 ![](./tree.png)
 
 ![](./tree2.png)
+
+![](./tree3.png)
+
