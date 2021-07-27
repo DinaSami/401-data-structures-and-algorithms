@@ -98,4 +98,19 @@ describe('testing Tree Class ', () => {
     let breadthFirst = tree.breadthFirst();
     expect(breadthFirst).toEqual([2,7,5,2,6,9,5,11,4]);
   });
+  it('fizzBuzz method', () => {
+    const tree = new Tree();
+    tree.root = new Node(2);
+    tree.root.left = new Node(7);
+    tree.root.left.left = new Node(2);
+    tree.root.left.right = new Node(6);
+    tree.root.left.right.left = new Node(5);
+    tree.root.left.right.right = new Node(11);
+    tree.root.right = new Node(5);
+    tree.root.right.right = new Node(9);
+    tree.root.right.right.left = new Node(15);
+    let fizzBuzz = tree.fizzBuzz(tree);
+    let qqq= fizzBuzz.breadthFirst() 
+    expect(qqq).toEqual(['2','7','Buzz','2','Fizz','Fizz','Buzz','11','FizzBuzz']);
+  });
 });

@@ -95,7 +95,34 @@ class Tree {
     }
     return treeArray;
   }
-}
+  fizzBuzz(tree) {
+   
+    let queue = [];
+    let newOne = tree
+    let current = newOne.root;
+
+    queue.push(current);
+    while (queue.length) {
+      current = queue.pop();
+      if (current.value % 3 === 0 && current.value % 5 === 0 && current !== null) {
+        current.value = 'FizzBuzz';    
+      }
+      else if (current.value % 3 === 0 && current !== null) {
+        current.value = 'Fizz';  
+      }
+      else if (current.value % 5 === 0 && current !== null) {
+        current.value = 'Buzz';
+      }
+      else if(current.value % 3 !== 0 && current.value % 5 !== 0 && current !== null) {
+        current.value = `${current.value}`;
+      }
+      if (current.left) queue.push(current.left);
+      if (current.right) queue.push(current.right);
+    }
+    // console.log('treeeeee', tree);
+    return tree;
+  }
+};
 
 
 
