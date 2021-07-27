@@ -29,9 +29,15 @@ I took the approach big O space/time by O(n) ,but for getMax method Big O was O(
 
 ## whiteboard
 
+####  Code Challenges 16
+
 ![](./tree.png)
 
+####  Code Challenges 17 
+
 ![](./tree2.png)
+
+####  Code Challenges 18 
 
 ![](./tree3.png)
 
